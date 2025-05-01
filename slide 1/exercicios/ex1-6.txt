@@ -1,0 +1,19 @@
+Passou de ano
+Var
+ nota1, nota2, nota3, media
+
+Inicio
+  Escreva( "Digite sua primeira nota: ")
+  Leia(nota1)
+  Escreva( "Digite sua segunda nota: ")
+  Leia(nota2)
+  Escreva( "Digite sua terceira nota: ")
+  Leia(nota3)
+
+  media = ( nota1 + nota2 + nota3 ) / 3
+
+  Se (media < 5) == reprovado
+   Escreva( "Você foi reprovado." )
+  Senão == aprovado // ( media > 5 )
+   Escreva( "Você foi aprovado." )
+Fim

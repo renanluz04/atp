@@ -1,0 +1,23 @@
+1)
+	a) #include <stdio.h>
+	   #include <stdlib.h>
+	   
+           int main () {
+	    	int c, estaVariável, q76354, número;
+	   }
+
+	b) printf("Digite um numero inteiro: ");
+	
+	c) scanf( "%d", &a);
+
+	d) if ( i != 7) {
+		printf("A variavel numero nao e igual a 7".);
+	   }
+
+	e) printf("Este e um programa em C");
+
+	f) printf("Este e um programa em C\nEste e um programa em C");
+
+	g) printf("Este\ne\num\nprograma\nem\nC");
+
+	h) printf("Este\te\tum\tprograma\tem\tC");
