@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define NUM_ROWS 5 //Linhas
-#define NUM_COLS 5 //Colunas
+#define NUM_ROWS 5
+#define NUM_COLS 5 
 
 void imprimirBingo(int cartela[NUM_ROWS][NUM_COLS], FILE* stream_saida) {
     char colunas[] = {'B', 'I', 'N', 'G', 'O'};
