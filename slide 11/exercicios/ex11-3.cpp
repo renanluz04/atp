@@ -8,14 +8,12 @@
 void imprimirBingo(int cartela[NUM_ROWS][NUM_COLS], FILE* stream_saida) {
     char colunas[] = {'B', 'I', 'N', 'G', 'O'};
 
-    // Imprime o cabeçalho B I N G O
     fprintf(stream_saida, "\n   ");
     for (int i = 0; i < NUM_COLS; i++) {
         fprintf(stream_saida, "%c\t", colunas[i]);
     }
     fprintf(stream_saida, "\n-------------------\n");
 
-    // Imprime os números da cartela
     for (int row = 0; row < NUM_ROWS; row++) {
         fprintf(stream_saida, " | ");
         for (int col = 0; col < NUM_COLS; col++) {
@@ -36,7 +34,7 @@ void geradorNumRand(int* destino, int qtd, int inicio, int fim) {
     int* numeros_possiveis = (int*)malloc(tamanho_intervalo * sizeof(int));
     if (numeros_possiveis == NULL) {
         printf("Falha na alocacao de memoria!\n");
-        exit(1); //Encerrar programa sem retorar a main
+        exit(1); 
     }
 
     for (int i = 0; i < tamanho_intervalo; i++) {
@@ -82,16 +80,12 @@ int main() {
     FILE* stream_saida;
     char nome_arquivo[100];
 
-    //Inicializa o gerador de números aleatórios
     srand(time(NULL));
 
-    //Interage com o usuário
     printf("--- Gerador de Cartelas de Bingo ---\n");
     printf("Quantas cartelas voce deseja gerar? ");
     scanf("%d", &num_cartelas);
 
-    
-    //Nome do arquivo e verificação de criação
     printf("Digite o nome do arquivo de saida (ex: bingo.csv): ");
     scanf("%s", nome_arquivo);
     stream_saida = fopen(nome_arquivo, "w");
@@ -100,8 +94,6 @@ int main() {
         return 1;
     }
     
-
-    //Gera a cartela de bingo
     for (int i = 0; i < num_cartelas; i++) {
         int cartela_atual[NUM_ROWS][NUM_COLS];
         gerarBingo(cartela_atual);
@@ -109,7 +101,6 @@ int main() {
         imprimirBingo(cartela_atual, stream_saida);
     }
 
-    //Fecha o arquivo e informa sucesso
     fclose(stream_saida);
     printf("\nSucesso! %d cartelas foram salvas no arquivo '%s'.\n", num_cartelas, nome_arquivo);
 
