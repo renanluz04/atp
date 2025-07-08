@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
     if (argc < 2) {
         printf("Erro: Forneca dois numeros como argumentos (numero e casas decimais).\n");
         printf("Exemplo de uso: 10,2037 2 \n");
-        return 1; // Retorna 1 para indicar um erro.
+        return 1; 
     }
     if (argc == 2) {
         double numero = atof(argv[1]);
