@@ -59,13 +59,13 @@ int main() {
         return 1; 
     }
 
-    float notas_lucas[] = {8.5, 9.0, 7.5};
-    float notas_renan[] = {6.0, 5.5, 7.0};
-    float notas_luca[] = {9.5, 10.0, 9.0};
+    float notas_renan[] = {8.5, 9.0, 7.5};
+    float notas_pedro[] = {6.0, 5.5, 7.0};
+    float notas_joao[] = {9.5, 10.0, 9.0};
 
-    adicionar_aluno(lista_de_alunos, "Lucas", notas_lucas);
     adicionar_aluno(lista_de_alunos, "Renan", notas_renan);
-    adicionar_aluno(lista_de_alunos, "Luca", notas_luca);
+    adicionar_aluno(lista_de_alunos, "Pedro", notas_pedro);
+    adicionar_aluno(lista_de_alunos, "Joao", notas_joao);
 
     calcular_e_imprimir_medias(lista_de_alunos);
 
