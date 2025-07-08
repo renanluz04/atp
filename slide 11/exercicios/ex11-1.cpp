@@ -14,9 +14,9 @@ bool isPrime(int numero){
             }
         }
         if(flag == 1){
-            return false; //não é primo
+            return false; 
         }else{
-            return true; //é primo
+            return true;
         }
     }
 }
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     if (argc < 3) {
         printf("Erro: Forneca dois numeros como argumentos (inicio e fim).\n");
         printf("Exemplo de uso: ./primos 10 50\n");
-        return 1; // Retorna 1 para indicar um erro.
+        return 1; 
     }
     int inicio = atoi(argv[1]);
     int fim = atoi(argv[2]);
